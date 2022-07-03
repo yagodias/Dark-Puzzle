@@ -16,7 +16,7 @@ const Tutorial = () => {
         1 + ! = ?
       </Typography>
 
-      <KeyButton />
+      <KeyButton passwordValue="2" redirect="../Levels/Level1" />
     </Box>
   );
 };
