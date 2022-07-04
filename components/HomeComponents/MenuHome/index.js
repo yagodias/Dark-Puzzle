@@ -5,7 +5,15 @@ import MenuIcon from '@mui/icons-material/Menu';
 import redirectTo from '../../../utils/MenuRedirectUtils';
 
 const MenuHome = () => {
-  const [openMenu, setOpenMenu] = useState(false);
+  const [anchorEl, setAnchorEl] = useState(null);
+  const openMenu = Boolean(anchorEl);
+  const handleClickMenu = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+
+  const handleCloseMenu = () => {
+    setAnchorEl(null);
+  };
 
   return (
     <AppBar position="static" color="transparent">
@@ -13,7 +21,7 @@ const MenuHome = () => {
         <Box>
           <IconButton
             size="large"
-            onClick={() => setOpenMenu(true)}
+            onClick={handleClickMenu}
           >
             <MenuIcon
               sx={{
@@ -24,14 +32,19 @@ const MenuHome = () => {
           </IconButton>
             <Menu
               id="menu"
+              anchorEl={anchorEl}
               anchorOrigin={{
                 vertical: 'top',
                 horizontal: 'left',
               }}
+              transformOrigin={{
+                vertical: 'top',
+                horizontal: 'left',
+              }}
               open={openMenu}
-              onClose={() => setOpenMenu(false)}
+              onClose={handleCloseMenu}
             >
-              <MenuItem onClick={() => setOpenMenu(false)}>About The Game</MenuItem>
+              <MenuItem onClick={() => redirectTo('/About')}>About The Game</MenuItem>
               <MenuItem onClick={() => redirectTo('/WhoAmI')}>Who Am I?</MenuItem>
               <MenuItem onClick={() => redirectTo('https://www.youtube.com/watch?v=dQw4w9WgXcQ')}>Nothing Here</MenuItem>
             </Menu>
