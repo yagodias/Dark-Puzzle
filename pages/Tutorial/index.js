@@ -1,23 +1,29 @@
-import React from 'react';
+import Head from 'next/head';
 import { Box, Typography } from '@mui/material';
 import Hint from '../../components/TutorialComponents/Hint';
 import KeyButton from '../../components/Buttons/KeyButton';
 
 const Tutorial = () => {
   return (
-    <Box textAlign="center">
-      <Typography variant="h2" sx={{ color: '#fff' }}>
-        Welcome to tutorial
-      </Typography>
+    <>
+      <Head>
+        <title>Tutorial</title>
+      </Head>
 
-      <Hint />
+      <Box textAlign="center">
+        <Typography variant="h2" sx={{ color: '#fff' }}>
+          Welcome to tutorial
+        </Typography>
 
-      <Typography variant="h4" sx={{ color: '#fff', marginTop: 8 }}>
-        1 + ! = ?
-      </Typography>
+        <Hint />
 
-      <KeyButton passwordValue="2" redirect="../Levels/Level1" />
-    </Box>
+        <Typography variant="h4" sx={{ color: '#fff', marginTop: 8 }}>
+          1 + ! = ?
+        </Typography>
+
+        <KeyButton passwordValue="2" redirect="../Levels/Level1" />
+      </Box>
+    </>
   );
 };
 

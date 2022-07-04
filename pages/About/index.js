@@ -15,7 +15,7 @@ export default function About() {
         </Typography>
         <Box p={4}>
           <Typography variant="h5">
-            This game is a private development, provide with practice knowledge
+            This game is a private development, provided with practice knowledge
           </Typography>
         </Box>
       </Box>
