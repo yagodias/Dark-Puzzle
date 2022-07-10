@@ -1,34 +1,61 @@
+import Head from 'next/head';
 import Image from 'next/image';
 import { Box, Typography } from '@mui/material';
 
 const Level3 = () => {
+  const imagePassword = () => {
+    const pass = window.prompt('Do you like me?');
+    
+    if (pass === 'yes') {
+      // window.location = `${window.location.origin}/levels/nocriativity`;
+      window.alert('more to come...');
+    } else if (pass === 'no') {
+      window.location = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ';
+    } else {
+      window.alert('yes or no');
+    }
+  };
+
   return (
-    <Box display="flex" flexDirection="column">
-      <Box>
-        <Typography>
-          No criativity
-        </Typography>
-      </Box>
+    <>
+      <Head>
+        <title>Level3</title>
+      </Head>
 
-      <Box>
-        <Image
-          loader={({ src, width }) => {
-            return `${src}?w=${width}`;
-          }}
-          width={350}
-          height={300}
-          title="Just me"
-          alt="Just me"
-          src="https://res.cloudinary.com/darkpuzzle/image/upload/v1656887963/Level3/me_ijkcek"
-        />
-      </Box>
+      <Box
+        display="flex"
+        flexDirection="column"
+        alignItems="center"
+        justifyContent="center"
+        color="#fff"
+      >
+        <Box>
+          <Typography variant="h2">
+            No criativity
+          </Typography>
+        </Box>
 
-      <Box>
-        <Typography>
-          Touch me
-        </Typography>
+        <Box>
+          <Image
+            alt="Just me"
+            loader={({ src, width }) => {
+              return `${src}?w=${width}`;
+            }}
+            height={300}
+            onClick={() => imagePassword()}
+            src="https://res.cloudinary.com/darkpuzzle/image/upload/v1656887963/Level3/me_ijkcek"
+            title="Just me"
+            width={350}
+          />
+        </Box>
+
+        <Box>
+          <Typography variant="h5">
+            Touch me
+          </Typography>
+        </Box>
       </Box>
-    </Box>
+    </>
   );
 };
 
