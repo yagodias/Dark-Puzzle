@@ -27,7 +27,7 @@ const Level1 = () => {
           </Typography>
         </Box>
       
-        <KeyButton passwordValue="dark puzzle" redirect="./darkpuzzle" />
+        <KeyButton passwordValue="dark puzzle" redirect="/levels/dark-puzzle" />
       </Box>
     </>
   );
