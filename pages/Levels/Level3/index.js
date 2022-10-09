@@ -1,13 +1,11 @@
-import Image from 'next/image';
-import { Box, Typography } from '@mui/material';
+import Image from "next/image";
+import { Box, Typography } from "@mui/material";
 
 const Level3 = () => {
   return (
     <Box display="flex" flexDirection="column">
       <Box>
-        <Typography>
-          No criativity
-        </Typography>
+        <Typography>No criativity</Typography>
       </Box>
 
       <Box>
@@ -24,9 +22,7 @@ const Level3 = () => {
       </Box>
 
       <Box>
-        <Typography>
-          Touch me
-        </Typography>
+        <Typography>Touch me</Typography>
       </Box>
     </Box>
   );

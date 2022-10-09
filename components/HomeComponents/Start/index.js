@@ -1,4 +1,4 @@
-import { Box, Grid, Typography } from '@mui/material';
+import { Box, Grid, Typography } from "@mui/material";
 import MenuHome from "../MenuHome";
 import LinkToTutorial from "../../Links/LinkToTutorial";
 
@@ -12,10 +12,10 @@ export default function Start() {
       </Grid>
 
       <Grid item xs={12}>
-        <Box sx={{ margin: 'auto' }} display="flex" justifyContent="center">
+        <Box sx={{ margin: "auto" }} display="flex" justifyContent="center">
           <LinkToTutorial />
         </Box>
       </Grid>
     </Grid>
   );
-};
+}

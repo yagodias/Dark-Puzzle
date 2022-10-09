@@ -1,12 +1,12 @@
-import Head from 'next/head';
-import { Box, Typography } from '@mui/material';
-import KeyButton from '../../../components/Buttons/KeyButton';
+import Head from "next/head";
+import { Box, Typography } from "@mui/material";
+import KeyButton from "../../../components/Buttons/KeyButton";
 
 const Level1 = () => {
   return (
     <>
       <Head>
-          <title>Level1</title>
+        <title>Level1</title>
       </Head>
 
       <Box
@@ -17,16 +17,14 @@ const Level1 = () => {
         justifyContent="center"
       >
         <Box m={2}>
-          <Typography variant="h2">
-            pii pi pipi
-          </Typography>
+          <Typography variant="h2">pii pi pipi</Typography>
         </Box>
         <Box m={2}>
           <Typography variant="h5">
             -.. .- .-. -.- / .--. ..- --.. --.. .-.. .
           </Typography>
         </Box>
-      
+
         <KeyButton passwordValue="dark puzzle" redirect="./Level2" />
       </Box>
     </>

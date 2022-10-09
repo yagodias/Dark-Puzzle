@@ -1,11 +1,15 @@
-import PropTypes from 'prop-types';
-import { Box, Button } from '@mui/material';
-import redirectTo from '../../../utils/MenuRedirectUtils';
+import PropTypes from "prop-types";
+import { Box, Button } from "@mui/material";
+import redirectTo from "../../../utils/MenuRedirectUtils";
 
 const ButtonAbout = ({ path }) => {
   return (
     <Box>
-      <Button variant="contained" color="error" onClick={() => redirectTo(path)}>
+      <Button
+        variant="contained"
+        color="error"
+        onClick={() => redirectTo(path)}
+      >
         Back
       </Button>
     </Box>
