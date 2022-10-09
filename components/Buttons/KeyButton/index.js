@@ -1,7 +1,7 @@
-import PropTypes from 'prop-types';
-import { Box, Button } from '@mui/material';
-import Key from '@mui/icons-material/Key';
-import redirectTo from '../../../utils/MenuRedirectUtils';
+import PropTypes from "prop-types";
+import { Box, Button } from "@mui/material";
+import Key from "@mui/icons-material/Key";
+import redirectTo from "../../../utils/MenuRedirectUtils";
 
 const KeyButton = ({ question, passwordValue, redirect }) => {
   const password = (question, key, level) => {
@@ -10,14 +10,17 @@ const KeyButton = ({ question, passwordValue, redirect }) => {
     if (answer === key) {
       redirectTo(level);
     } else {
-      window.alert('WRONG!!!!');
-    };
-  }
-  
+      window.alert("WRONG!!!!");
+    }
+  };
 
   return (
     <Box mt={8}>
-      <Button variant="contained" color="error" onClick={() => password(question, passwordValue, redirect)}>
+      <Button
+        variant="contained"
+        color="error"
+        onClick={() => password(question, passwordValue, redirect)}
+      >
         <Key />
       </Button>
     </Box>
@@ -31,7 +34,7 @@ KeyButton.propTypes = {
 };
 
 KeyButton.defaultProps = {
-  question: 'What is the password?',
+  question: "What is the password?",
 };
 
 export default KeyButton;

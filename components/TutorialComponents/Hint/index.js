@@ -1,6 +1,6 @@
-import { useState } from 'react';
-import { Box, IconButton } from '@mui/material';
-import Info from '@mui/icons-material/Info';
+import { useState } from "react";
+import { Box, IconButton } from "@mui/material";
+import Info from "@mui/icons-material/Info";
 
 const Hint = () => {
   const [openHint, setOpenHint] = useState(false);
@@ -9,14 +9,14 @@ const Hint = () => {
     setOpenHint(true);
 
     if (setOpenHint) {
-      window.alert('All the keys in lowercase');
+      window.alert("All the keys in lowercase");
     }
   };
 
   return (
     <Box>
       <IconButton onClick={() => alertHint()} open={openHint}>
-        <Info sx={{ color: '#fff' }} />
+        <Info sx={{ color: "#fff" }} />
       </IconButton>
     </Box>
   );
