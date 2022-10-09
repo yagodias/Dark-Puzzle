@@ -1,4 +1,4 @@
-import { Box, Grid, Typography } from "@mui/material";
+import { Box } from "@mui/material";
 import MenuHome from "../MenuHome";
 import LinkToTutorial from "../../Links/LinkToTutorial";
 
