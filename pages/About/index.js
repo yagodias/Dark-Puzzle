@@ -9,18 +9,16 @@ export default function About() {
       alignItems="center"
       textAlign="center"
     >
-      <Box sx={{ color: 'white', padding: 4 }}>
-        <Typography variant="h2">
-          Hi!
-        </Typography>
+      <Box sx={{ color: "white", padding: 4 }}>
+        <Typography variant="h2">Hi!</Typography>
         <Box p={4}>
           <Typography variant="h5">
             This game is a private development, provided with practice knowledge
           </Typography>
         </Box>
       </Box>
-      
+
       <ButtonAbout path="/" />
     </Box>
   );
-};
+}
