@@ -21,7 +21,7 @@ const Level1 = () => {
         </Box>
         <Box m={2}>
           <Typography variant="h5">
-            -.. .- .-. -.- / .--. ..- --.. --.. .-.. .
+            -.. .- .-. -.-  .--. ..- --.. --.. .-.. .
           </Typography>
         </Box>
       
