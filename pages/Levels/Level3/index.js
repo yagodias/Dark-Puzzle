@@ -1,19 +1,13 @@
-import { useState } from 'react';
-import { useRouter } from 'next/router';
 import Head from 'next/head';
 import Image from 'next/image';
 import { Box, Typography } from '@mui/material';
 
 const Level3 = () => {
-  const router = useRouter();
-  const [levelForRoute, setLevelForRoute] = useState('');
-
   const imagePassword = () => {
     const pass = window.prompt('Do you like me?');
-    
+
     if (pass === 'yes') {
-      setLevelForRoute('/levels/yes');
-      router.push(levelForRoute);
+      window.location.href = `${window.location.origin}/levels/yes`;
     } else if (pass === 'no') {
       window.location = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ';
     } else {

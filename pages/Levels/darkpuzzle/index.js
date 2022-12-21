@@ -2,7 +2,7 @@ import Head from "next/head";
 import { Box, Typography } from "@mui/material";
 import KeyButton from "../../../components/Buttons/KeyButton";
 
-const Level2 = () => {
+export default function Level2() {
   return (
     <>
       <Head>
@@ -21,10 +21,8 @@ const Level2 = () => {
           </Typography>
         </Box>
 
-          <KeyButton passwordValue="dark puzzle" redirect="/levels/level3" />
+          <KeyButton id="buttonPassword" passwordValue="dark puzzle" redirect="/levels/level3" />
       </Box>
     </>
   );
-};
-
-export default Level2;
+}
