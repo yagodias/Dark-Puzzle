@@ -6,7 +6,7 @@ module.exports = {
       { source: '/about', destination: '/About' },
       { source: '/whoami', destination: '/WhoAmI' },
       { source: '/levels/2', destination: '/Levels/2' },
-      { source: '/levels/dark-puzzle', destination: '/Levels/Darkpuzzle'},
+      { source: '/levels/darkpuzzle', destination: '/Levels/Darkpuzzle'},
       { source: '/levels/level3', destination: '/Levels/Level3'},
     ];
   },
