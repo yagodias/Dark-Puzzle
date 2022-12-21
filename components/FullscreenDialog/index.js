@@ -39,7 +39,7 @@ function FullscreenDialog({
       TransitionProps={{
         direction,
       }}
-      transintionDuration={400}
+      transitionDuration={400}
       maxWidth={maxWidth}
       fullWidth={!isMobile}
       fullScreen={isMobile || fullScreen}
@@ -61,7 +61,7 @@ function FullscreenDialog({
           {showCloseButton && (
             <Grid item xs={2}>
               <DialogActions>
-                <Button autoFocus onClick={handleClose} color="primary">
+                <Button autoFocus onClick={handleClose} color="inherit">
                   Fechar
                 </Button>
               </DialogActions>

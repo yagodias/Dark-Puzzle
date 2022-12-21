@@ -3,7 +3,7 @@ import { Box, Typography } from "@mui/material";
 import Hint from "../../components/TutorialComponents/Hint";
 import KeyButton from "../../components/Buttons/KeyButton";
 
-const Tutorial = () => {
+export default function Tutorial() {
   return (
     <>
       <Head>
@@ -21,10 +21,10 @@ const Tutorial = () => {
           1 + ! = ?
         </Typography>
 
-        <KeyButton id="buttonPassword" passwordValue="2" redirect="/levels/2" />
+        <Box id="buttonPassword">
+          <KeyButton passwordValue="2" redirect="/levels/2" />
+        </Box>
       </Box>
     </>
   );
-};
-
-export default Tutorial;
+}
