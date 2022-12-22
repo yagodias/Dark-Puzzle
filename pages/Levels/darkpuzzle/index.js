@@ -21,7 +21,7 @@ export default function Level2() {
           </Typography>
         </Box>
 
-          <KeyButton id="buttonPassword" passwordValue="dark puzzle" redirect="/levels/level3" />
+          <KeyButton id="buttonPassword" passwordValue="dark puzzle" redirect="/level3" />
       </Box>
     </>
   );
