@@ -2,7 +2,7 @@ import Head from "next/head";
 import { Box, Typography } from "@mui/material";
 import KeyButton from "../../../components/Buttons/KeyButton";
 
-export default function Level2() {
+const Level2 = () => {
   return (
     <>
       <Head>
@@ -25,4 +25,6 @@ export default function Level2() {
       </Box>
     </>
   );
-}
+};
+
+export default Level2;
