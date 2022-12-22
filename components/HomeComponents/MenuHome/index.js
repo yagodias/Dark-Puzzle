@@ -47,10 +47,10 @@ const MenuHome = () => {
             open={openMenu}
             onClose={handleCloseMenu}
           >
-            <MenuItem onClick={() => redirectTo("/About")}>
+            <MenuItem onClick={() => redirectTo("/about")}>
               About The Game
             </MenuItem>
-            <MenuItem onClick={() => redirectTo("/WhoAmI")}>Who Am I?</MenuItem>
+            <MenuItem onClick={() => redirectTo("/whoami")}>Who Am I?</MenuItem>
             <MenuItem
               onClick={() =>
                 redirectTo("https://www.youtube.com/watch?v=dQw4w9WgXcQ")
