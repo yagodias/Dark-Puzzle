@@ -22,7 +22,7 @@ export default function Tutorial() {
         </Typography>
 
         <Box id="buttonPassword">
-          <KeyButton passwordValue="2" redirect="/levels/2" />
+          <KeyButton passwordValue="2" redirect="/2" />
         </Box>
       </Box>
     </>

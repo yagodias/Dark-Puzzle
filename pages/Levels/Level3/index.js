@@ -7,7 +7,7 @@ const Level3 = () => {
     const pass = window.prompt('Do you like me?');
 
     if (pass === 'yes') {
-      window.location.href = `${window.location.origin}/levels/yes`;
+      window.location.href = `${window.location.origin}/yes`;
     } else if (pass === 'no') {
       window.location = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ';
     } else {

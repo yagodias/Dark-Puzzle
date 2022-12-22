@@ -5,9 +5,9 @@ module.exports = {
       { source: '/tutorial', destination: '/Tutorial' },
       { source: '/about', destination: '/About' },
       { source: '/whoami', destination: '/WhoAmI' },
-      { source: '/levels/2', destination: '/Levels/2' },
-      { source: '/levels/darkpuzzle', destination: '/Levels/Darkpuzzle'},
-      { source: '/levels/level3', destination: '/Levels/Level3'},
+      { source: '/2', destination: '/Levels/2' },
+      { source: '/dark-puzzle', destination: '/Levels/Darkpuzzle'},
+      { source: '/level3', destination: '/Levels/Level3'},
     ];
   },
   images: {
