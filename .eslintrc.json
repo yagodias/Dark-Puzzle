@@ -1,3 +1,38 @@
 {
-  "extends": "next/core-web-vitals"
+  "parser": "babel-eslint",
+  "env": {
+    "es6": true
+  },
+  "plugins": [
+    "react",
+    "plugins",
+    "prettier"
+  ],
+  "extends": [
+    "prettier",
+    "next/core-web-vitals"
+  ],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "settings": {
+    "import/resolver": {
+      "alias": {
+        "map": [
+          [
+            "components",
+            "./components"
+          ],
+          [
+            "styles",
+            "./styles"
+          ]
+        ]
+      }
+    }
+  }
 }
