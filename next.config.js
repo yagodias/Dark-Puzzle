@@ -8,6 +8,7 @@ module.exports = {
       { source: '/2', destination: '/Levels/2' },
       { source: '/dark-puzzle', destination: '/Levels/3'},
       { source: '/level3', destination: '/Levels/Level3'},
+      { source: '/yes', destination: '/Levels/Yes'},
     ];
   },
   images: {
